@@ -77,7 +77,7 @@ def speak(text):
 
 def listen():
 
-    with sr.Microphone(device_index=1) as source:
+    with sr.Microphone() as source:
 
         recognizer.adjust_for_ambient_noise(source, duration=1)
 
@@ -521,8 +521,6 @@ while True:
                 answer = ask_ai(question)
 
                 print(answer)
-
-                print(answer)
                 speak("Answer generated. Check terminal for full response.")
 
             # CONVERSATION
@@ -550,29 +548,42 @@ while True:
                 speak(
                     "Always happy to help Boss"
                 )
-                
+            
+                        # CLOSE CURRENT APP
+
+            elif "close application" in command or \
+                 "close current application" in command or \
+                 "close app" in command:
+
+                close_current_app()
+
+            # CLOSE SPECIFIC APP
+
             elif "close" in command:
 
-                   app_name = command.replace("close", "").strip()
+                app_name = command.replace(
+                    "close", ""
+                ).strip()
 
-                   if app_name in OPENED_APPS:
+                if app_name in OPENED_APPS:
 
-                      os.system(
-                      f'taskkill /f /im "{OPENED_APPS[app_name]}"'
+                    os.system(
+                        f'taskkill /f /im "{OPENED_APPS[app_name]}"'
                     )
 
-                   speak(f"{app_name} closed")
-            elif "close application" in command or \
-                "close current application" in command or \
-                "close app" in command:
+                    speak(
+                        f"{app_name} closed"
+                    )
 
-                 close_current_app()
+                else:
+
+                    speak(
+                        "Application not found"
+                    )
+
+            # AI FALLBACK
 
             else:
-
-                    speak("Application not found")
-
-        else:
 
                 answer = ask_ai(command)
 
@@ -582,8 +593,8 @@ while True:
                 short_answer = answer[:400]
 
                 speak(short_answer)
-            
-
+                
+    
     except sr.WaitTimeoutError:
         pass
 
@@ -591,4 +602,5 @@ while True:
         pass
 
     except Exception as e:
-        print("Error:", e)
+        print("Error:", e)    
+                        
